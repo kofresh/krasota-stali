@@ -1,0 +1,93 @@
+const products = [
+
+    {
+        id: "aurum",
+
+        category: "available",
+
+        name: "AURUM",
+
+        subtitle: "Журнальный столик",
+
+        price: 89000,
+
+        description:
+            "Круглый журнальный столик с дымчатым закалённым стеклом и бронзовым основанием. Лёгкая архитектурная форма подчёркивает премиальность изделия.",
+
+        materials: [
+            "Дымчатое стекло",
+            "Шлифованная бронза"
+        ],
+
+        size: "Ø900 × H350 мм",
+
+        images: [
+            "collections/aurum/1.jpg",
+            "collections/aurum/2.jpg",
+            "collections/aurum/3.jpg",
+            "collections/aurum/4.jpg",
+            "collections/aurum/5.jpg"
+        ]
+    },
+
+    {
+        id: "nova",
+
+        category: "available",
+
+        name: "NOVA",
+
+        subtitle: "Прикроватная тумба",
+
+        price: 54000,
+
+        description:
+            "Компактная прикроватная тумба с металлическим корпусом и кожаным фасадом. Современный минимализм и внимание к деталям.",
+
+        materials: [
+            "Сталь",
+            "Натуральная кожа"
+        ],
+
+        size: "600 × 450 × 420 мм",
+
+        images: [
+            "collections/nova/1.jpg",
+            "collections/nova/2.jpg",
+            "collections/nova/3.jpg",
+            "collections/nova/4.jpg",
+            "collections/nova/5.jpg"
+        ]
+    },
+
+    {
+        id: "marmo",
+
+        category: "available",
+
+        name: "MARMO",
+
+        subtitle: "Журнальный столик",
+
+        price: 125000,
+
+        description:
+            "Журнальный столик с натуральным камнем и металлическим основанием. Каждый рисунок камня уникален.",
+
+        materials: [
+            "Натуральный камень",
+            "Нержавеющая сталь"
+        ],
+
+        size: "1200 × 700 × 320 мм",
+
+        images: [
+            "collections/marmo/1.jpg",
+            "collections/marmo/2.jpg",
+            "collections/marmo/3.jpg",
+            "collections/marmo/4.jpg",
+            "collections/marmo/5.jpg"
+        ]
+    }
+
+];

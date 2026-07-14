@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Коллекции — Красота Стали</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon"
+          href="images/favicon.png"
+          type="image/x-icon">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..900&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<div class="modal" id="productModal">
+
+    <div class="modal-window">
+
+        <button class="modal-close" id="closeModal">
+            ×
+        </button>
+
+        <div class="modal-gallery">
+
+            <img
+                id="modalMainImage"
+                class="modal-main-image"
+                src=""
+                alt=""
+            >
+
+            <div
+                class="modal-thumbnails"
+                id="modalThumbnails"
+            >
+            </div>
+
+        </div>
+
+        <div class="modal-info">
+
+            <span class="modal-label">
+
+                Коллекция
+
+            </span>
+
+            <h2 id="modalName"></h2>
+
+            <h3 id="modalSubtitle"></h3>
+
+            <p
+                id="modalDescription"
+                class="modal-description"
+            ></p>
+
+            <div class="modal-section">
+
+                <h4>
+
+                    Материалы
+
+                </h4>
+
+                <ul id="modalMaterials">
+
+                </ul>
+
+            </div>
+
+            <div class="modal-section">
+
+                <h4>
+
+                    Размер
+
+                </h4>
+
+                <p id="modalSize"></p>
+
+            </div>
+
+            <div
+                class="modal-price"
+                id="modalPrice"
+            ></div>
+
+            <div class="modal-quantity">
+
+                <button id="minus">
+
+                    −
+
+                </button>
+
+                <span id="count">
+
+                    1
+
+                </span>
+
+                <button id="plus">
+
+                    +
+
+                </button>
+
+            </div>
+
+            <button
+                class="modal-button"
+                id="addCart"
+            >
+
+                Добавить в корзину
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<body class="catalog-page">
+
+<header class="header">
+
+    <div class="topbar">
+
+        <img src="images/лого_демо.png"
+             class="logo">
+
+    </div>
+
+    <div class="header-line"></div>
+
+    <nav class="nav">
+
+        <a href="index.html#about">
+            О НАС
+        </a>
+
+        <a href="collections.html">
+            КОЛЛЕКЦИИ
+        </a>
+
+        <a href="index.html#contacts">
+            КОНТАКТЫ
+        </a>
+        <a href="cart.html" class="cart-link">
+
+    <svg
+        class="cart-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8">
+
+        <path d="M3 5h2l2 10h10l2-7H7"></path>
+
+        <circle cx="9" cy="19" r="1.4"></circle>
+
+        <circle cx="17" cy="19" r="1.4"></circle>
+
+    </svg>
+
+    <span id="cartCounter">
+
+        0
+
+    </span>
+
+</a>
+    </nav>
+
+</header>
+
+<a href="index.html"
+   class="back-button">
+
+    ← На главную
+
+</a>
+
+<section class="catalog-hero">
+
+    <h1>
+
+        КОЛЛЕКЦИИ
+
+    </h1>
+
+</section>
+
+<section class="filters">
+
+    <button class="active"
+            id="availableBtn">
+
+        В НАЛИЧИИ
+
+    </button>
+
+    <button id="conceptBtn">
+
+        ДИЗАЙН-КОНЦЕПТЫ
+
+    </button>
+
+</section>
+
+<section
+class="concept-description"
+id="conceptDescription">
+
+    <p>
+
+        Концепты — авторские идеи мебели,
+        созданные совместно с искусственным интеллектом
+        и дизайнерами бренда.
+
+        <br><br>
+
+        Некоторые из них существуют
+        только в цифровом виде
+        и могут быть изготовлены
+        по индивидуальному заказу.
+
+    </p>
+
+</section>
+
+<section class="products">
+
+    <div id="products-grid">
+
+    </div>
+
+</section>
+
+<!-- MODAL -->
+
+<div
+class="product-modal"
+id="productModal">
+
+</div>
+
+<!--script src="js/products.js"></script>-->
+<script src="js/cart.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/collections.js"></script>
+
+<script>
+
+window.addEventListener("scroll",()=>{
+
+const header=document.querySelector(".header");
+
+if(window.scrollY>50){
+
+header.classList.add("compact");
+
+}else{
+
+header.classList.remove("compact");
+
+}
+
+});
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Коллекции — Красота Стали</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon"
+          href="images/favicon.png"
+          type="image/x-icon">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..900&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+<header class="header">
+
+    <div class="topbar">
+
+        <img src="images/лого_демо.png"
+             class="logo">
+
+    </div>
+
+    <div class="header-line"></div>
+
+    <nav class="nav">
+
+        <a href="index.html#about">
+            О НАС
+        </a>
+
+        <a href="collections.html">
+            КОЛЛЕКЦИИ
+        </a>
+
+        <a href="index.html#contacts">
+            КОНТАКТЫ
+        </a>
+        <a href="cart.html" class="cart-link">
+
+    <svg
+        class="cart-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8">
+
+        <path d="M3 5h2l2 10h10l2-7H7"></path>
+
+        <circle cx="9" cy="19" r="1.4"></circle>
+
+        <circle cx="17" cy="19" r="1.4"></circle>
+
+    </svg>
+
+    <span id="cartCounter">
+
+        0
+
+    </span>
+
+</a>
+    </nav>
+
+</header>
+<a href="index.html"
+   class="back-button">
+
+    ← На главную
+
+</a>
+<main class="cart-page">
+
+    <h1 class="cart-title">
+
+        КОРЗИНА
+
+    </h1>
+
+    <section class="cart-content">
+
+        <div class="cart-left">
+
+            <div id="cartItems">
+
+            </div>
+
+        </div>
+
+        <aside class="cart-summary">
+
+            <h2>
+
+                Итого
+
+            </h2>
+
+            <div
+                id="cartTotal"
+                class="cart-total"
+            >
+
+                0 ₽
+
+            </div>
+
+            <button
+                id="checkoutButton"
+                class="modal-button"
+            >
+
+                Оформить заказ
+
+            </button>
+
+        </aside>
+
+    </section>
+
+</main>
+<div class="modal" id="checkoutModal">
+
+    <div class="modal-window checkout-window">
+
+        <button class="modal-close" id="closeCheckout">
+            ×
+        </button>
+
+        <div class="checkout-content">
+
+            <h2>ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+
+            <div class="checkout-grid">
+
+                <input
+                    id="customerName"
+                    type="text"
+                    placeholder="Ваше имя"
+                >
+
+                <input
+                    id="customerPhone"
+                    type="tel"
+                    placeholder="Телефон"
+                >
+
+                <input
+                    id="customerEmail"
+                    type="email"
+                    placeholder="E-mail"
+                >
+
+                <textarea
+                    id="customerComment"
+                    placeholder="Комментарий к заказу"
+                ></textarea>
+
+            </div>
+
+            <div class="checkout-delivery">
+
+                <h3>Способ получения</h3>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="delivery"
+                        value="pickup"
+                        checked
+                    >
+
+                    Самовывоз
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="delivery"
+                        value="delivery"
+                    >
+
+                    Доставка
+
+                </label>
+
+            </div>
+
+            <div class="checkout-total">
+
+                <span>
+
+                    Итого
+
+                </span>
+
+                <strong id="checkoutTotal">
+
+                    0 ₽
+
+                </strong>
+
+            </div>
+
+            <button
+                id="sendOrder"
+                class="modal-button"
+            >
+
+                Отправить заявку
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/cart-page.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

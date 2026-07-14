@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красота Стали</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<section class="hero">
+
+    <!-- VIDEO -->
+    <video class="hero-video"
+           autoplay
+           muted
+           loop
+           playsinline>
+
+        <source src="video/videofon2.mp4"
+                type="video/mp4">
+
+    </video>
+
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
+    <div class="hero-fade"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+
+    <div class="topbar">
+
+        <img src="images/лого_демо.png"
+             class="logo">
+
+    </div>
+
+    <div class="header-line"></div>
+
+    <nav class="nav">
+
+        <a href="index.html#about">
+            О НАС
+        </a>
+
+        <a href="collections.html">
+            КОЛЛЕКЦИИ
+        </a>
+
+        <a href="index.html#contacts">
+            КОНТАКТЫ
+        </a>
+        <a href="cart.html" class="cart-link">
+
+    <svg
+        class="cart-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8">
+
+        <path d="M3 5h2l2 10h10l2-7H7"></path>
+
+        <circle cx="9" cy="19" r="1.4"></circle>
+
+        <circle cx="17" cy="19" r="1.4"></circle>
+
+    </svg>
+
+    <span id="cartCounter">
+
+        0
+
+    </span>
+
+</a>
+    </nav>
+
+</header>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+
+        <img src="images/лого_демо.png"
+             alt="Красота Стали"
+             class="hero-logo">
+
+        <p>
+            Премиальная мебель из металла, дерева и натуральных материалов
+        </p>
+
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about-section" id="about">
+
+    <div class="about-content">
+
+        <h2>
+            КАЧЕСТВО
+        <br>
+            В ДЕТАЛЯХ
+        </h2>
+
+        <p class="about-text">
+
+        Мы создаём мебель, в которой металл,
+        дерево и стекло становятся частью
+        продуманного пространства.
+        <br><br>
+        От идеи и проектирования до ручной
+        сборки и финальной отделки —
+        каждый этап выполняется
+        с вниманием к деталям.
+
+        </p>
+
+        <a href="collections.html" class="about-button">
+            СМОТРЕТЬ КОЛЛЕКЦИИ
+        </a>
+
+    </div>
+
+    <div class="about-video">
+
+        <video
+            autoplay
+            muted
+            loop
+            playsinline>
+
+            <source
+                src="video/krasota_stali.mp4"
+                type="video/mp4">
+
+        </video>
+
+    </div>
+
+</section>
+
+<!-- CONTACTS -->
+
+<section id="contacts"></section>
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+    const header =
+    document.querySelector(".header");
+
+    if(window.scrollY > 50){
+
+        header.classList.add("compact");
+
+    }else{
+
+        header.classList.remove("compact");
+
+    }
+
+});
+
+
+</script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/collections.js"></script>
+</body>
+</html>
