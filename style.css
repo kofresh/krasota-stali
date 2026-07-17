@@ -2029,3 +2029,159 @@ TOAST
     color:#4c8bf5;
 
 }
+/* =======================
+        CONTACTS
+======================= */
+
+.contacts-section{
+
+    background:#070707;
+
+    padding:140px 40px;
+
+}
+
+.contacts-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.contacts-container h2{
+
+    color:white;
+
+    font-size:52px;
+
+    font-weight:300;
+
+    letter-spacing:8px;
+
+    margin-bottom:30px;
+
+}
+
+.contacts-description{
+
+    color:#9f9f9f;
+
+    max-width:700px;
+
+    margin:0 auto 80px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+.contacts-grid{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    margin-bottom:80px;
+
+}
+
+.contact-item{
+
+    flex:1;
+
+}
+
+.contact-item h3{
+
+    color:#c8a96a;
+
+    margin-bottom:18px;
+
+    font-size:20px;
+
+    letter-spacing:2px;
+
+}
+
+.contact-item p{
+
+    color:white;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.contact-button{
+
+    display:inline-block;
+
+    padding:18px 50px;
+
+    border:1px solid #c8a96a;
+
+    color:white;
+
+    text-decoration:none;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+.contact-button:hover{
+
+    background:#c8a96a;
+
+    color:black;
+
+}
+@media(max-width:768px){
+
+.contacts-section{
+
+padding:90px 25px;
+
+}
+
+.contacts-container h2{
+
+font-size:36px;
+
+letter-spacing:4px;
+
+}
+
+.contacts-description{
+
+font-size:17px;
+
+margin-bottom:50px;
+
+}
+
+.contacts-grid{
+
+flex-direction:column;
+
+gap:35px;
+
+}
+
+.contact-button{
+
+width:100%;
+
+padding:18px;
+
+}
+
+}
